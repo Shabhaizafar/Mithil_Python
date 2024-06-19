@@ -70,11 +70,11 @@
 #     print(i,mydict[i])
 
 
-mydict = {
-    "fname" : "Raj",
-    "lname" : "Patel",
-    "age"   :  12
-}
+# mydict = {
+#     "fname" : "Raj",
+#     "lname" : "Patel",
+#     "age"   :  12
+# }
 
 # Clear dict : 
 # mydict.clear()
@@ -105,3 +105,49 @@ mydict = {
 
 # v = mydict.values()
 # print(v)
+
+
+# mydict = {
+#     "fname" : "Raj",
+#     "lname" : "Patel",
+#     "age"   :  12
+# }
+# print(mydict)
+# li = ["Raj","12",13]
+# c = mydict.fromkeys(mydict,1)
+# print(c)
+
+# c = mydict.pop("age")
+# print(mydict)
+# print(c)
+
+# c =  mydict.popitem("lname")
+# print(mydict)
+
+# print(c)
+
+# mydict = {
+#     "fname" : "Raj",
+#     "lname" : "Patel",
+#     "age"   :  12
+# }
+# print(mydict)
+# mydict.setdefault("Gender")
+# mydict.setdefault("Contact",1234567)
+# mydict.setdefault("age",100)
+
+
+# mydict.update({"Location":122,"hobbies":{"Inner Game": "Gaming","Outer Game ":"Cricket"}})
+# # print(mydict)
+
+# print(mydict["hobbies"].values())
+
+
+str1 = "Google".lower()
+myDict = {}
+
+for i in range(0,len(str1)): 
+    for j in zip(str1[i],str(str1.count(str1[i]))):
+        myDict[j[0]] = j[1]
+
+print(myDict)
