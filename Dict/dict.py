@@ -151,3 +151,11 @@ for i in range(0,len(str1)):
         myDict[j[0]] = j[1]
 
 print(myDict)
+
+
+for i in str1: 
+    for j in zip(i,str(str1.count(i))):
+        # myDict[j[0]] = j[1]
+        myDict.update({j[0]:j[1]})
+
+print(myDict)
