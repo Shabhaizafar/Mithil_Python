@@ -154,9 +154,78 @@ Output = [4, 6, 7, 8, 9, 10, 11, 13, 16, 20]
 # -> You can solve this in many ways. Any ideas? Well, you can just use looping constructs or use the list() count method or you can start with an empty dictionary and use the dict.get() method. Probably many other ways!
 
 # D1 = {'Niraj': 23, 'Krutarth': 29, 'Pushpa': 33, 'Sures': 40}
+# D1 = {
+#     'Niraj': 23, 
+#     'Krutarth': 29, 
+#     'Pushpa': 33, 
+#     'Sures': 40
+# }
+
+# /////////////////////////////////////////////////////////////////////////
+# 9. Change the Value of a Key in Nested Dictionary
+# -> Given a nested dictionary, you need to write a program demonstrating how to change the value associated with a particular key of that dictionary. 
+
+# #change the value of a key in nested dictionary
+# #Initializing Dictionary
+# D1 = {'emp1': {'name' : 'Niraj', 'age' : 21, 'job' : 'developer'}, 
+#     'emp2': {'name' : 'Zafar', 'age' : 22, 'job' : 'data analyst'}, 
+#     'emp3': {'name' : 'Rutvi', 'age' : 22, 'job' : 'data scientist'}, 
+#     'emp4': {'name' : 'Krutarth', 'age' : 60, 'job' : 'python developer'}
+# }
+
+# k = input("Enter key Pair : ")
+# for i in D1 :
+#     if i == k :
+#         k = input("Enter Nestedkey Pair : ")
+#         for j in D1[i]:
+#             if j == k :
+#                 if type(D1[i][j]) == type('str'):
+#                     v = input("Enter New Value : ")
+#                     D1[i][j] = v
+#                 else:
+#                     v = int(input("Enter New Value : "))
+#                     D1[i][j] = v
+
+# print(D1)
+
+
+
+# /////////////////////////////////////////////////////////////////////////
+
+# 11. Check if the Given Dictionary Is Empty or Not
+# -> One way to check this using the len() function, which you can try coding; we will achieve this using the bool() function. The bool() function evaluates to standard true or false and is used to return or convert a value to Boolean type. If you pass an empty dictionary, the bool() evaluates to False, as failure to convert something that is empty.
+
+# myDict = {
+# }
+
+# if bool(len(myDict)):
+#     print("Dict is not Empty")
+# else:
+#     print("Dict is Empty")
+# # /////////////////////////////////////////////////////////////////
+# 14. Get a Key From Value in a Dictionary
+# -> You need to write a program, which returns the key for a given value. This can be done in multiple ways. Try doing it using dict.items() function.
+
+# #get key for a given value using dict.items()
+# # Dictionary Initialization
+# D1 = {
+#     'Priyanka Chopra': 23,
+#     'Alia Bhatt': 29,
+#     'Hritik Roshan': 45, 
+#     'Ranbir Kapoor': 40
+#     }
+# v = int(input("Enter the Value of v : "))
+
+# flage = 1
+# for i in D1.items():
+#     if i[1]==v:
+#         print(i[0])
+#         flage = 0
+# if flage:
+#     print("Not Exist")
+
 D1 = {
-    'Niraj': 23, 
-    'Krutarth': 29, 
-    'Pushpa': 33, 
-    'Sures': 40
+    "fname" : "Raj"
 }
+D1.update({"fname":"sdf"})
+print(D1)
