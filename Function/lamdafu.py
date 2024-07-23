@@ -25,7 +25,7 @@
 # l1 = [1,2,3,4,5]
 # var = []
 # for i in l1 : 
-#     v = lambda a : pow(a,2)
+#     v = lambda i : pow(i,2)
 #     var.append(v(i))
 
 # print(var)
@@ -35,6 +35,7 @@
 
 # Sort a list of tuples based on the second element using a lambda function.
 l1 = [(1, 2), (3, 5), (-1, 10), (0, 0), (7, 3), (-5, 2), (8, 1), (4, 9), (6, -2), (2, 6)]
+print(sorted(l1, key= lambda a : a[1] ))
 
 
 # /////////////////////////////////////////////////////////////
