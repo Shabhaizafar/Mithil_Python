@@ -56,19 +56,39 @@ Sorting the List of dictionaries :
 # print(sorted(l2,key= lambda a : a['color'][0]))
 
 #----------------------------------------------------------
-5. Write a Python program to filter a list of integers using Lambda.
-Original list of integers:
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-Even numbers from the said list:
-[2, 4, 6, 8, 10]
-Odd numbers from the said list:
-[1, 3, 5, 7, 9]
+# 5. Write a Python program to filter a list of integers using Lambda.
+# Original list of integers:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Even numbers from the said list:
+# [2, 4, 6, 8, 10]
+# Odd numbers from the said list:
+# [1, 3, 5, 7, 9]
+# #----------------------------------------------------------
+
+# 6. Write a Python program to square and cube every number in a given list of integers using Lambda.
+# Original list of integers:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Square every number of the said list:
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# Cube every number of the said list:
+# [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+#--------------------------------------------------
+# 7. Write a Python program to find if a given string starts with a given character using Lambda.
+# Sample Output:
+# True
+# False
+# str1 = "sdfg"
+# str1.startswith('df')
 #----------------------------------------------------------
 
-6. Write a Python program to square and cube every number in a given list of integers using Lambda.
-Original list of integers:
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-Square every number of the said list:
-[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-Cube every number of the said list:
-[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+# 8. Write a Python program to extract year, month, date and time using Lambda.
+# Sample Output:
+# 2020-01-15 09:03:32.744178
+# 2020
+# 1
+# 15
+# 09:03:32.744178
+import datetime as dt
+
+today = dt.datetime.today()
+l1 = '-'.join(str(today).split(' ')).split('-')
