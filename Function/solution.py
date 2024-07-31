@@ -88,7 +88,57 @@ Sorting the List of dictionaries :
 # 1
 # 15
 # 09:03:32.744178
-import datetime as dt
 
-today = dt.datetime.today()
-l1 = '-'.join(str(today).split(' ')).split('-')
+# import datetime as dt
+
+# today = dt.datetime.today()
+# l1 = '-'.join(str(today).split(' ')).split('-')
+
+# var = lambda a : print(a)
+# [var(item) for item in l1]
+
+#---------------------------------------------------
+# 10. Write a Python program to create Fibonacci series up to n using Lambda.
+# Fibonacci series upto 2:
+# [0, 1]
+# Fibonacci series upto 5:
+# [0, 1, 1, 2, 3]
+# Fibonacci series upto 6:
+# [0, 1, 1, 2, 3, 5]
+# Fibonacci series upto 9:
+# [0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+# li = []
+# z = 0
+# a=0
+# b=1
+# c = 0
+# n=int(input("Enter no:"))
+# def fibonaci(a,b,c,n,z):
+#     if (z == n):
+#         return li
+
+#     c=a+b
+#     # li.append(a)
+#     var = lambda x : x.append(a)
+#     var(li)
+#     a=b
+#     b=c     
+#     z+=1    
+
+#     return fibonaci(a,b,c,n,z)
+# print(fibonaci(a,b,c,n,z))
+
+
+# 13. Write a Python program to count the even and odd numbers in a given array of integers using Lambda.
+# Original arrays:
+# [1, 2, 3, 5, 7, 8, 9, 10]
+# Number of even numbers in the above array: 3
+# Number of odd numbers in the above array: 5
+
+# l1 = [1, 2, 3, 5, 7, 8, 9, 10]
+
+# even = list(filter(lambda a : a%2==0,l1))
+
+# print("Length of Even : ",len(even))
+# print("Length of Odd : ",len(l1)-len(even))
