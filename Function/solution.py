@@ -142,3 +142,27 @@ Sorting the List of dictionaries :
 
 # print("Length of Even : ",len(even))
 # print("Length of Odd : ",len(l1)-len(even))
+
+
+#-------------------------------------------------
+
+# 19. Write a Python program to find all anagrams of a string in a given list of strings using Lambda.
+# Orginal list of strings:
+# ['bcda', 'abce', 'cbda', 'cbea', 'adcb']
+# Anagrams of 'abcd' in the above string:
+# ['bcda', 'cbda', 'adcb']
+
+l1 = ['bcda', 'abce', 'cbda', 'cbea', 'adcb']
+
+temp = []
+s1 = 'abcd'
+for i in l1:
+    flag = 1
+    for j in s1:
+        var = lambda a,b : a not in b
+        if(var(j,i)):
+            flag = 0
+            break
+    if(flag==1):
+        temp.append(i)
+print(temp)
