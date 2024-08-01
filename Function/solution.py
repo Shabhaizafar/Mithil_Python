@@ -152,17 +152,17 @@ Sorting the List of dictionaries :
 # Anagrams of 'abcd' in the above string:
 # ['bcda', 'cbda', 'adcb']
 
-l1 = ['bcda', 'abce', 'cbda', 'cbea', 'adcb']
+# l1 = ['bcda', 'abce', 'cbda', 'cbea', 'adcb']
 
-temp = []
-s1 = 'abcd'
-for i in l1:
-    flag = 1
-    for j in s1:
-        var = lambda a,b : a not in b
-        if(var(j,i)):
-            flag = 0
-            break
-    if(flag==1):
-        temp.append(i)
-print(temp)
+# temp = []
+# s1 = 'abcd'
+# for i in l1:
+#     flag = 1
+#     for j in s1:
+#         var = lambda a,b : a not in b
+#         if(var(j,i)):
+#             flag = 0
+#             break
+#     if(flag==1):
+#         temp.append(i)
+# print(temp)
