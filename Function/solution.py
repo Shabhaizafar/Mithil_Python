@@ -166,3 +166,48 @@ Sorting the List of dictionaries :
 #     if(flag==1):
 #         temp.append(i)
 # print(temp)
+# -----------------------------------------------------
+
+# 24. Write a Python program to find numbers within a given range where every number is divisible by every digit it contains.
+# Sample Output:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
+
+# l=[]
+# for i in range(1,101):
+#    li = [j for j in str(i)]
+#    if ('0' in str(i)):
+#       continue
+#    templi = list(map(lambda a : i%int(a)==0, li))
+#    if(False not in templi):
+#         l.append(i)
+
+# print(l)
+
+# #----------------------------------------------------------
+
+# 25. Write a Python program to create the next bigger number by rearranging the digits of a given number.
+# Original number: 12
+# Next bigger number: 21
+# Original number: 10
+# Next bigger number: False
+# Original number: 201
+# Next bigger number: 210
+# Original number: 102
+# Next bigger number: 120
+# Original number: 445
+# Next bigger number: 454
+
+from itertools import permutations
+
+def get_unique_permutations(number):
+    str_number = str(number)
+    perms = set(permutations(str_number))
+    perm_numbers = {int(''.join(p)) for p in perms}
+    sorting = sorted(list(perm_numbers),key= lambda a : a)
+    return sorting[1]
+ 
+
+number = 123
+permutations_of_number = get_unique_permutations(number)
+
+print(permutations_of_number)
